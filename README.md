@@ -77,7 +77,7 @@ The SQL code is organized by module:
 
 ## 📘 Data Dictionary
 
-See full definitions of dataset fields in [Loan Data Dictionary](./datasets/data_terminology.md)
+See full definitions of dataset fields in [Loan Data Dictionary](./dataset/data_terminology.md)
 
 ---
 ## 📧 Contact
