@@ -22,6 +22,18 @@ To assess loan performance and identify credit risk segments, enabling managemen
 
 ---
 
+## 📊 Tableau Dashboard Pages
+[🔗 View Full Tableau Dashboard on Tableau Public](https://public.tableau.com/views/LoanDashboard_YourName/ExecutiveSummary)
+
+1. **Executive Summary**: KPIs, MoM Growth, Good vs Bad Loan Ratio
+![Executive Summary](./tableau_dashboard/executive_summary.png)
+3. **Loan Overview**: Monthly trends, Purpose, Region, Term, Employment
+![Loan Overview](./tableau_dashboard/loan_overview.png)
+4. **Loan Details**: Interactive slicers by Grade, Status, Purpose
+![Loan Details](./tableau_dashboard/loan_details.png)
+
+---
+
 ## 📈 Insights & Recommendations
 
 ### 🔹 Good Loan vs Bad Loan Summary
@@ -41,18 +53,6 @@ To assess loan performance and identify credit risk segments, enabling managemen
 - Tighten lending for **renters** with <2 years employment (higher default)
 - Re-evaluate interest rates for **60-month loans** (lower repayment rate)
 - Monitor repayment behavior for **debt consolidation** loans
-
----
-
-## 📊 Tableau Dashboard Pages
-[🔗 View Full Tableau Dashboard on Tableau Public](https://public.tableau.com/views/LoanDashboard_YourName/ExecutiveSummary)
-
-1. **Executive Summary**: KPIs, MoM Growth, Good vs Bad Loan Ratio
-![Executive Summary](./tableau_dashboard/executive_summary.png)
-3. **Loan Overview**: Monthly trends, Purpose, Region, Term, Employment
-![Loan Overview](./tableau_dashboard/loan_overview.png)
-4. **Loan Details**: Interactive slicers by Grade, Status, Purpose
-![Loan Details](./tableau_dashboard/loan_details.png)
 
 ---
 
