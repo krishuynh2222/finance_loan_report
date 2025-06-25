@@ -23,7 +23,7 @@ To assess loan performance and identify credit risk segments, enabling managemen
 ---
 
 ## 📊 Tableau Dashboard Pages
-[🔗 View Full Tableau Dashboard on Tableau Public]([https://public.tableau.com/views/LoanDashboard_YourName/ExecutiveSummary](https://public.tableau.com/views/FinanceLoanReport/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
+[View Full Tableau Dashboard on Tableau Public](https://public.tableau.com/views/FinanceLoanReport/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 1. **Executive Summary**: KPIs, MoM Growth, Good vs Bad Loan Ratio
 ![Executive Summary](./tableau_dashboard/executive_summary.png)
