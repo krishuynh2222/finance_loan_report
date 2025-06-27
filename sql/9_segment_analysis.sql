@@ -8,7 +8,7 @@ SELECT
 	COUNT(id) AS Total_Loan_Applications,
 	SUM(loan_amount) AS Total_Funded_Amount,
 	SUM(total_payment) AS Total_Amount_Received
-FROM bank_loan_data
+FROM dbo.financial_loan
 GROUP BY MONTH(issue_date), DATENAME(MONTH, issue_date)
 ORDER BY MONTH(issue_date)
 
@@ -18,7 +18,7 @@ SELECT
 	COUNT(id) AS Total_Loan_Applications,
 	SUM(loan_amount) AS Total_Funded_Amount,
 	SUM(total_payment) AS Total_Amount_Received
-FROM bank_loan_data
+FROM dbo.financial_loan
 GROUP BY address_state
 ORDER BY address_state
 
@@ -29,7 +29,7 @@ SELECT
 	COUNT(id) AS Total_Loan_Applications,
 	SUM(loan_amount) AS Total_Funded_Amount,
 	SUM(total_payment) AS Total_Amount_Received
-FROM bank_loan_data
+FROM dbo.financial_loan
 GROUP BY term
 ORDER BY term
 
@@ -39,17 +39,17 @@ SELECT
 	COUNT(id) AS Total_Loan_Applications,
 	SUM(loan_amount) AS Total_Funded_Amount,
 	SUM(total_payment) AS Total_Amount_Received
-FROM bank_loan_data
+FROM dbo.financial_loan
 GROUP BY emp_length
 ORDER BY emp_length
 
 --PURPOSE
-SELECT 
-	purpose AS PURPOSE, 
-	COUNT(id) AS Total_Loan_Applications,
-	SUM(loan_amount) AS Total_Funded_Amount,
-	SUM(total_payment) AS Total_Amount_Received
-FROM bank_loan_data
+SELECT
+        purpose AS PURPOSE,
+        COUNT(id) AS Total_Loan_Applications,
+        SUM(loan_amount) AS Total_Funded_Amount,
+        SUM(total_payment) AS Total_Amount_Received
+FROM dbo.financial_loan
 GROUP BY purpose
 ORDER BY purpose
 
@@ -60,17 +60,17 @@ SELECT
 	COUNT(id) AS Total_Loan_Applications,
 	SUM(loan_amount) AS Total_Funded_Amount,
 	SUM(total_payment) AS Total_Amount_Received
-FROM bank_loan_data
+FROM dbo.financial_loan
 GROUP BY home_ownership
 ORDER BY home_ownership
 
---PURPOSE
+-- Grade A customers by purpose
 SELECT 
 	purpose AS PURPOSE, 
 	COUNT(id) AS Total_Loan_Applications,
 	SUM(loan_amount) AS Total_Funded_Amount,
 	SUM(total_payment) AS Total_Amount_Received
-FROM bank_loan_data
+FROM dbo.financial_loan
 WHERE grade = 'A'
 GROUP BY purpose
 ORDER BY purpose

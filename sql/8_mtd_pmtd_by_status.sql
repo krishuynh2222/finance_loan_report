@@ -9,16 +9,24 @@ SELECT
       AVG(int_rate * 100) AS Interest_Rate,
       AVG(dti * 100) AS DTI
   FROM
-      bank_loan_data
+      dbo.financial_loan
   GROUP BY
-      loan_status
+      loan_status;
 
 
 SELECT 
 	loan_status, 
 	SUM(total_payment) AS MTD_Total_Amount_Received, 
 	SUM(loan_amount) AS MTD_Total_Funded_Amount 
-FROM bank_loan_data
+FROM dbo.financial_loan
 WHERE MONTH(issue_date) = 12 
-GROUP BY loan_status
+GROUP BY loan_status;
 
+-- PMTD metrics by status
+SELECT
+        loan_status,
+        SUM(total_payment) AS PMTD_Total_Amount_Received,
+        SUM(loan_amount) AS PMTD_Total_Funded_Amount
+FROM dbo.financial_loan
+WHERE MONTH(issue_date) = 11
+GROUP BY loan_status;
