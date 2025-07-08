@@ -1,4 +1,4 @@
-# Finace Loan Report
+# Loan Performance Analysis 
 
 A data analysis project that evaluates loan disbursement trends, risk segmentation, and repayment performance using SQL and Tableau. 
 
